@@ -1,0 +1,2202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+main article #introduce .intro a.read-more, main article #meeting .content a.read-more, main article #meeting2 .content a.read-more, main article #contact-us .contact-us-inner a.read-more {
+  background: #feb518;
+  padding: 10px 40px;
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  border: 2px solid transparent;
+  margin-top: 25px;
+  transition: 0.4s;
+}
+
+main article #introduce .intro a.read-more:hover, main article #meeting .content a.read-more:hover, main article #meeting2 .content a.read-more:hover, main article #contact-us .contact-us-inner a.read-more:hover {
+  background: #fff;
+  color: #feb518;
+  border: 2px solid #feb518;
+}
+
+
+main article #introduce, main article #special, main article #menu-tab, main article #menu-tab ul li ._1tab, main article #feedback, main article #chefs, main article #reservation, main article #meeting, main article #meeting2, main article #services, main article #booking-table, main article #gallery, main article #main-blog, main article #aside, main article #message, main article #branch, footer {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+
+main article #block_1 .block_1-inner, main article #block_2 .block_1-inner, main article #block_7 .block_1-inner, main article #block_3 .block_1-inner, main article #block_4 .block_1-inner, main article #block_5 .block_1-inner, main article #block_6 .block_1-inner, main article #block_8 .block_1-inner, main article #block_9 .block_1-inner, main article #block_10 .block_1-inner {
+  padding: 222px 0;
+}
+
+main article .title, main article #meeting2 .content .title {
+  margin-bottom: 60px;
+}
+
+main article .title h5, main article #meeting2 .content .title h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  font-weight: 700;
+  color: #feb518;
+}
+
+main article .title h4, main article #meeting2 .content .title h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333333;
+}
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+header #header-top {
+  height: 40px;
+  background: #333333;
+}
+
+header #header-top .social {
+  height: 40px;
+  border-right: 1px solid #6e6e6e;
+}
+
+header #header-top .social ul li {
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+header #header-top .social ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #dddddd;
+  transition: 0.4s;
+}
+
+header #header-top .social ul li a:hover {
+  color: #feb518;
+}
+
+header #header-top .phone {
+  height: 40px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #dddddd;
+  padding-left: 24px;
+}
+
+header #header-top .opening-hours {
+  height: 40px;
+}
+
+header #header-top .opening-hours p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  color: #dddddd;
+  border-right: 1px solid #6e6e6e;
+  border-left: 1px solid #6e6e6e;
+  float: right;
+  padding: 0px 24px;
+}
+
+header #hidden-nav {
+  width: 240px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.96);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  transform: translateX(100%);
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+header #hidden-nav.opened {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+header #hidden-nav ul {
+  list-style: none;
+  padding-top: 45px;
+}
+
+header #hidden-nav ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+header #hidden-nav ul li a {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #dddddd;
+}
+
+header #hidden-nav ul li a.active {
+  color: #feb518;
+}
+
+header #hidden-nav ul li a.reservation {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 33px;
+  background: #feb518;
+  border: 2px solid #feb518;
+  transition: 0.4s;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+header #hidden-nav ul li a.reservation:hover {
+  background: none;
+  color: #dddddd;
+}
+
+header .overlay-all {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.164);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+header .overlay-all.apperance {
+  opacity: 1;
+  visibility: visible;
+}
+
+header #Nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+header #Nav #Navigation ul li a.nav-link {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 16px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+header #Nav #Navigation ul li a.nav-link:hover {
+  color: #feb518;
+}
+
+header #Nav #Navigation ul li a.nav-link.active {
+  color: #feb518;
+}
+
+header #Nav #Navigation ul li a.reservation {
+  padding: 12px 33px;
+  background: none;
+  border: 2px solid #fff;
+  transition: 0.4s;
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+header #Nav #Navigation ul li a.reservation:hover {
+  background: #feb518;
+  color: #fff;
+}
+
+header #Nav button.open-button {
+  float: right;
+  border: none;
+  display: none;
+  background: #feb518;
+  border-radius: 0;
+}
+
+header #Nav button.open-button i {
+  color: #fff;
+}
+
+header #Nav.fixedTop {
+  background-color: rgba(0, 0, 0, 0.96);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+main article ._1row {
+  clear: both;
+  width: 100%;
+}
+
+main article #slider ._1slide {
+  height: 95vh;
+}
+
+main article #slider ._1slide img {
+  width: 100%;
+  height: 100%;
+}
+
+main article #slider ._1slide .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main article #slider ._1slide .slide-caption {
+  bottom: 30vh;
+  overflow: hidden;
+}
+
+main article #slider ._1slide .slide-caption h2.title-caption {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+
+main article #slider ._1slide .slide-caption p.more {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+main article #slider ._1slide .slide-caption a.read {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  background: #feb518;
+  border: 2px solid transparent;
+  transition: 0.4s;
+  text-decoration: none;
+  padding: 10px 40px;
+}
+
+main article #slider ._1slide .slide-caption a.read:hover {
+  background: none;
+  color: #fff;
+  border: 2px solid #feb518;
+}
+
+main article #slider a.left, main article #slider a.right {
+  transition: 0.4s;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  background: #6e6e6e;
+  display: block;
+  position: absolute;
+  top: 50%;
+  line-height: 40px;
+}
+
+main article #slider a.left:hover, main article #slider a.right:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+main article #slider a.left span, main article #slider a.right span {
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  transform: translateY(-1px);
+  display: block;
+}
+
+main article #slider a.left {
+  left: 2%;
+}
+
+main article #slider a.right {
+  right: 2%;
+}
+
+main article #slider ol.indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  transition: background 0.4s ease;
+}
+
+main article #slider ol.indicators li.active {
+  background: #fff;
+}
+
+main article #introduce img {
+  width: 100%;
+}
+
+main article #introduce .intro {
+  margin-top: 60px;
+}
+
+main article #introduce .intro h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: #feb518;
+}
+
+main article #introduce .intro h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #333333;
+  padding-bottom: 20px;
+}
+
+main article #introduce .intro p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  padding-bottom: 30px;
+}
+
+main article #block_1 .block_1-inner, main article #block_2 .block_1-inner, main article #block_7 .block_1-inner, main article #block_3 .block_1-inner, main article #block_4 .block_1-inner, main article #block_5 .block_1-inner, main article #block_6 .block_1-inner, main article #block_8 .block_1-inner, main article #block_9 .block_1-inner, main article #block_10 .block_1-inner {
+  display: block;
+  background-image: url(../images/1.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
+
+main article #block_1 .block_1-inner:before, main article #block_2 .block_1-inner:before, main article #block_7 .block_1-inner:before, main article #block_3 .block_1-inner:before, main article #block_4 .block_1-inner:before, main article #block_5 .block_1-inner:before, main article #block_6 .block_1-inner:before, main article #block_8 .block_1-inner:before, main article #block_9 .block_1-inner:before, main article #block_10 .block_1-inner:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main article #block_1 .block_1-inner .title, main article #block_2 .block_1-inner .title, main article #block_7 .block_1-inner .title, main article #block_3 .block_1-inner .title, main article #block_4 .block_1-inner .title, main article #block_5 .block_1-inner .title, main article #block_6 .block_1-inner .title, main article #block_8 .block_1-inner .title, main article #block_9 .block_1-inner .title, main article #block_10 .block_1-inner .title {
+  margin-bottom: 0px;
+}
+
+main article #block_1 .block_1-inner .title h5, main article #block_2 .block_1-inner .title h5, main article #block_7 .block_1-inner .title h5, main article #block_3 .block_1-inner .title h5, main article #block_4 .block_1-inner .title h5, main article #block_5 .block_1-inner .title h5, main article #block_6 .block_1-inner .title h5, main article #block_8 .block_1-inner .title h5, main article #block_9 .block_1-inner .title h5, main article #block_10 .block_1-inner .title h5 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  font-weight: 700;
+  color: #feb518;
+}
+
+main article #block_1 .block_1-inner .title h4, main article #block_2 .block_1-inner .title h4, main article #block_7 .block_1-inner .title h4, main article #block_3 .block_1-inner .title h4, main article #block_4 .block_1-inner .title h4, main article #block_5 .block_1-inner .title h4, main article #block_6 .block_1-inner .title h4, main article #block_8 .block_1-inner .title h4, main article #block_9 .block_1-inner .title h4, main article #block_10 .block_1-inner .title h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+main article #special ._1-dish {
+  cursor: pointer;
+}
+
+main article #special ._1-dish .thumbnail {
+  position: relative;
+  transition: 0.4s;
+}
+
+main article #special ._1-dish .thumbnail span {
+  padding: 0px 15px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333333;
+  background: #feb518;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+main article #special ._1-dish .thumbnail img {
+  width: 100%;
+}
+
+main article #special ._1-dish .thumbnail:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.164);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+main article #special ._1-dish .information {
+  margin-top: 24px;
+}
+
+main article #special ._1-dish .information a {
+  display: block;
+  float: left;
+  color: #333333;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+main article #special ._1-dish .information span.price {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  float: right;
+}
+
+main article #special ._1-dish p.desc {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777777;
+  float: left;
+  margin-top: 10px;
+}
+
+main article #special ._1-dish:hover .thumbnail:before {
+  background: none;
+}
+
+main article #special ._1-dish:hover .information a {
+  color: #feb518;
+}
+
+main article #block_2 .block_1-inner, main article #block_7 .block_1-inner {
+  background-image: url(../images/2.jpg);
+}
+
+main article #menu-tab {
+  padding-bottom: 0 !important;
+}
+
+main article #menu-tab ul.list-tab {
+  position: relative;
+  z-index: 2;
+  top: 1px;
+  margin-top: -160px;
+  list-style: none;
+}
+
+main article #menu-tab ul.list-tab li {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+main article #menu-tab ul.list-tab li:hover {
+  color: #feb518;
+}
+
+main article #menu-tab ul.list-tab li span.active {
+  color: #feb518;
+}
+
+main article #menu-tab .overlay-detail-info {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.164);
+  top: 0;
+  left: 0;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+}
+
+main article #menu-tab .overlay-detail-info.show-3 {
+  opacity: 1;
+  visibility: visible;
+}
+
+main article #menu-tab ul {
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+main article #menu-tab ul li ._1tab {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main article #menu-tab ul li ._1tab ._1dish {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner {
+  position: relative;
+  min-height: 90px;
+  padding: 14px 0px 0px 110px;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .image-box {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 0;
+  top: 0;
+  border: 1px solid #dddddd;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .image-box img {
+  width: 100%;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner span.new {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  padding: 0 10px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #feb518;
+  z-index: 10;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info {
+  list-style: none;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li {
+  cursor: pointer;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.name {
+  float: left;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.name a {
+  transition: 0.4s;
+  text-decoration: none;
+  color: #333333;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.name a:hover {
+  color: #feb518;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.dotted {
+  padding-left: 30px;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.price {
+  float: right;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.desc {
+  float: left;
+  color: #777777;
+  margin-top: 10px;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info {
+  width: 780px;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+  background: #fff;
+  padding: 40px;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info.show-2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .img-thumbnail-dish {
+  float: left;
+  position: relative;
+  width: 35%;
+  height: 100%;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .img-thumbnail-dish img {
+  width: 100%;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .img-thumbnail-dish:hover .nav-button a.prev, main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .img-thumbnail-dish:hover .nav-button a.next {
+  opacity: 1;
+  visibility: visible;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .info-block {
+  width: 65%;
+  margin-left: 38%;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .info-block p.name {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  padding-top: 15px;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .info-block p.describe {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .info-block p.cost {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #feb518;
+}
+
+main article #menu-tab ._1tab.show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn 0.4s ease;
+}
+
+main article #feedback {
+  position: relative;
+  background-image: url(../images/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+main article #feedback:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+main article #feedback ._1-fb-slide {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+main article #feedback ._1-fb-slide p.quote-sign {
+  font-size: 26px;
+  margin-bottom: 45px;
+}
+
+main article #feedback ._1-fb-slide p.people {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  font-weight: 400;
+  color: #feb518;
+  margin-top: 34px;
+}
+
+main article #chefs ._1-chef ._1-chef-inner {
+  transition: 0.4s;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .image-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  box-shadow: 0px 3px 13px 0px #00000045;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .image-box img {
+  width: 100%;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .image-box .overlay {
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  background: #feb518c7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 3;
+  transform: scale(0.95);
+}
+
+main article #chefs ._1-chef ._1-chef-inner .image-box .overlay ul {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  list-style: none;
+  display: flex;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .image-box .overlay ul li {
+  padding: 0 12px;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .image-box .overlay ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .image-box .overlay ul li a:hover {
+  color: #333333;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .name-and-job {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+}
+
+main article #chefs ._1-chef ._1-chef-inner .name-and-job p.job {
+  margin-top: 16px;
+  color: #feb518;
+}
+
+main article #chefs ._1-chef ._1-chef-inner:hover .image-box .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+main article #reservation {
+  position: relative;
+  background-image: url(../images/4.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main article #reservation:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+main article #reservation .title h4 {
+  color: #fff;
+}
+
+main article #reservation form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main article #reservation form p.valid-form {
+  margin-bottom: 30px;
+}
+
+main article #reservation form p.valid-form input {
+  width: 100%;
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border: 1px solid #6e6e6e;
+  color: #fff;
+  transition: 0.4s;
+  position: relative;
+  height: 45px;
+  display: block;
+}
+
+main article #reservation form p.valid-form input:focus {
+  border: 1px solid #feb518;
+  outline: #feb518;
+}
+
+main article #reservation form p.valid-form input::placeholder {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+
+main article #reservation form p.valid-form input[type='text'] {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+main article #reservation form p.valid-form input[type=number]::-webkit-inner-spin-button,
+main article #reservation form p.valid-form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main article #reservation form button#send {
+  padding: 16px 45px;
+  color: #333333;
+  background: #feb518;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+  border-radius: 0;
+  border: 1px solid #feb518;
+  margin-top: 30px;
+}
+
+main article #reservation form button#send:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #feb518;
+}
+
+main article #meeting img {
+  width: 100%;
+}
+
+main article #meeting .content {
+  padding-left: 0 !important;
+}
+
+main article #meeting .content .title {
+  margin-bottom: 24px;
+}
+
+main article #meeting .content .title h4 {
+  font-size: 28px;
+}
+
+main article #meeting .content p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+main article #meeting .content h6 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+main article #meeting .content a.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+main article #meeting .picture-1 {
+  padding-right: 5px !important;
+}
+
+main article #meeting .picture-2 {
+  padding-left: 5px !important;
+}
+
+main article #block_3 .block_1-inner {
+  background-image: url(../images/5.jpg);
+}
+
+main article #meeting2 img {
+  width: 100%;
+}
+
+main article #meeting2 .content {
+  padding-left: 0 !important;
+}
+
+main article #meeting2 .content .title {
+  margin-bottom: 24px;
+}
+
+main article #meeting2 .content .title h4 {
+  font-size: 28px;
+}
+
+main article #meeting2 .content p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+main article #meeting2 .content h6 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
+
+main article #meeting2 .content a.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+main article #meeting2 .collumn {
+  position: relative;
+  padding: 0 2px;
+}
+
+main article #services .img-box {
+  margin-bottom: 35px;
+}
+
+main article #services .widget-content p.lable {
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main article #services .widget-content p.text {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+main article #master-chef {
+  padding-top: 32px;
+  padding-bottom: 0 !important;
+  background-image: url(../images/6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+main article #master-chef .img-box img {
+  width: 100%;
+}
+
+main article #master-chef .master-chef-infor {
+  margin-top: 17%;
+}
+
+main article #master-chef .master-chef-infor .name-chef {
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+main article #master-chef .master-chef-infor .job {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  font-weight: 400;
+  color: #feb518;
+  margin-bottom: 30px;
+}
+
+main article #master-chef .master-chef-infor .infor {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+/* line 966, style.scss */
+main article #master-chef .master-chef-infor ul {
+  margin-top: 35px;
+  list-style: none;
+  display: flex;
+}
+
+main article #master-chef .master-chef-infor ul li {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 0;
+  background: #333333;
+  margin-right: 10px;
+  text-align: center;
+}
+
+main article #master-chef .master-chef-infor ul li a {
+  text-decoration: none;
+  transition: 0.4s;
+  color: #fff;
+}
+
+main article #master-chef .master-chef-infor ul li:hover a {
+  color: #feb518;
+}
+
+main article #contact-us {
+  padding: 70px 0;
+  position: relative;
+  background-image: url(../images/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+main article #contact-us:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main article #contact-us .contact-us-inner {
+  display: inline-block;
+}
+
+main article #contact-us .contact-us-inner .text {
+  padding-top: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  float: left;
+  line-height: 24px;
+}
+
+main article #contact-us .contact-us-inner a.read-more {
+  float: right;
+  margin-top: 0;
+}
+
+main article #block_4 .block_1-inner {
+  background-image: url(../images/4.jpg);
+}
+
+main article #booking-table .booking {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+main article #booking-table .booking p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777777;
+}
+
+main article #booking-table .booking p span {
+  color: #feb518;
+}
+
+main article #booking-table .booking p.phone-number {
+  font-size: 36px;
+  color: #333333;
+}
+
+main article #booking-table form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main article #booking-table form p.valid-form {
+  margin-bottom: 30px;
+}
+
+main article #booking-table form p.valid-form input {
+  width: 100%;
+  padding: 10px 25px;
+  background: #fff;
+  border-style: solid;
+  border: 1px solid #6e6e6e;
+  color: #333333;
+  transition: 0.4s;
+  position: relative;
+  height: 45px;
+  display: block;
+}
+
+main article #booking-table form p.valid-form input:focus {
+  border: 1px solid #feb518;
+  outline: #feb518;
+}
+
+main article #booking-table form p.valid-form input::placeholder {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+}
+
+main article #booking-table form p.valid-form input[type='text'] {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+main article #booking-table form p.valid-form input[type=number]::-webkit-inner-spin-button,
+main article #booking-table form p.valid-form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main article #booking-table form button#send {
+  padding: 16px 45px;
+  color: #333333;
+  background: #feb518;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+  border-radius: 0;
+  border: 1px solid #feb518;
+  margin-top: 30px;
+}
+
+main article #booking-table form button#send:hover {
+  background: #fff;
+  color: #feb518;
+}
+
+main article #block_5 .block_1-inner {
+  background-image: url(../images/4.jpg);
+}
+
+main article #block_6 .block_1-inner {
+  background-image: url(../images/5.jpg);
+}
+
+main article #block_8 .block_1-inner {
+  background-image: url(../images/5.jpg);
+}
+
+main article .pagination {
+  margin-top: 50px;
+  position: relative;
+}
+
+main article .pagination ul.page-number {
+  list-style: none;
+  display: inline-flex;
+  margin-left: 0;
+}
+
+main article .pagination ul.page-number li {
+  margin-right: 10px;
+}
+
+main article .pagination ul.page-number li span.current-page {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50%;
+  background: #feb518;
+  padding: 10px 18px;
+  color: #fff;
+}
+
+main article .pagination ul.page-number li a {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50%;
+  background: transparent;
+  padding: 10px 18px;
+  color: #333333;
+  transition: 0.4s;
+}
+
+main article .pagination ul.page-number li a:hover {
+  background: #feb518;
+  color: #fff;
+}
+
+main article #gallery ._1-box {
+  margin-bottom: 30px;
+}
+
+main article #gallery ._1-box a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: 0.4s;
+}
+
+main article #gallery ._1-box a img {
+  width: 100%;
+}
+
+main article #gallery ._1-box a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.164);
+  transition: 0.4s;
+}
+
+main article #gallery ._1-box a:hover::after {
+  opacity: 0;
+}
+
+main article #main-blog ._1-blog {
+  margin-bottom: 60px;
+}
+
+main article #main-blog ._1-blog .blog-title a {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+  transition: 0.4s;
+}
+
+main article #main-blog ._1-blog .blog-title span {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+}
+
+main article #main-blog ._1-blog .blog-image-box {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+main article #main-blog ._1-blog .blog-image-box img {
+  width: 100%;
+}
+
+main article #main-blog ._1-blog .blog-image-box:after {
+  content: '';
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.164);
+}
+
+main article #main-blog ._1-blog .title-and-author .author {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  padding-top: 10px;
+}
+
+main article #main-blog ._1-blog .title-and-author .author span.time {
+  color: #6e6e6e;
+  margin-right: 10px;
+}
+
+main article #main-blog ._1-blog .title-and-author .author a.author {
+  text-decoration: none;
+  color: #feb518;
+}
+
+main article #main-blog ._1-blog .content p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6e6e;
+  padding-top: 30px;
+}
+
+main article #main-blog ._1-blog .read-more-and-comment {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px dotted #6e6e6e;
+}
+
+main article #main-blog ._1-blog .read-more-and-comment a {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+main article #main-blog ._1-blog .read-more-and-comment a:hover {
+  color: #feb518;
+}
+
+main article #main-blog ._1-blog .read-more-and-comment a.readMore {
+  float: left;
+}
+
+main article #main-blog ._1-blog .read-more-and-comment a.comment {
+  float: right;
+}
+
+main article #main-blog ._1-blog .read-more-and-comment .tags {
+  float: left;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+}
+
+main article #main-blog ._1-blog .read-more-and-comment .tags a {
+  color: #feb518;
+}
+
+main article #main-blog ._1-blog ul {
+  padding-top: 30px;
+  list-style: none;
+}
+
+main article #main-blog ._1-blog ul li {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6e6e;
+  margin-bottom: 10px;
+}
+
+main article #main-blog ._1-blog ul li i {
+  font-size: 12px;
+  color: #feb518;
+  margin-right: 10px;
+}
+
+main article #main-blog ._1-blog iframe {
+  margin-top: 30px;
+  width: 100%;
+  height: 410px;
+}
+
+main article #main-blog ._1-blog:hover .blog-image-box:after {
+  opacity: 0;
+}
+
+main article #main-blog ._1-blog:hover .blog-title a {
+  color: #feb518;
+}
+
+main article #aside form {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+main article #aside form input[type=text] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #6e6e6e;
+  padding: 0 20px;
+  transition: 0.4s;
+}
+
+main article #aside form input[type='text'] {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main article #aside form input::placeholder {
+  color: #6e6e6e;
+}
+
+main article #aside form button[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 6px;
+  right: 23px;
+  color: #6e6e6e;
+}
+
+main article #aside form button[type=submit]:hover {
+  color: #333333;
+}
+
+main article #aside form input:focus {
+  border: 1px solid #feb518;
+  outline: #feb518;
+}
+
+main article #aside .categories p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+main article #aside .categories ul {
+  list-style: none;
+}
+
+main article #aside .categories ul li {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+main article #aside .categories ul li a {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+  transition: 0.4s;
+}
+
+main article #aside .categories ul li a i {
+  margin-right: 10px;
+}
+
+main article #aside .categories ul li a:hover {
+  color: #feb518;
+}
+
+main article #message {
+  padding-bottom: 0 !important;
+}
+
+main article #message .contact-image-box img {
+  width: 100%;
+}
+
+main article #message .right .title {
+  padding-top: 40px;
+}
+
+main article #message .right .title h5 {
+  font-size: 30px;
+}
+
+main article #message .right .title h4 {
+  font-size: 28px;
+}
+
+main article #message .right form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main article #message .right form p {
+  padding-left: 0;
+}
+
+main article #message .right form p.valid-form {
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+main article #message .right form p.valid-form input {
+  width: 100%;
+  padding: 10px 25px;
+  background: #fff;
+  border-style: solid;
+  border: 1px solid #6e6e6e;
+  color: #333333;
+  transition: 0.4s;
+  position: relative;
+  height: 45px;
+  display: block;
+}
+
+main article #message .right form p.valid-form input:focus {
+  border: 1px solid #feb518;
+  outline: #feb518;
+}
+
+main article #message .right form p.valid-form input::placeholder {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+}
+/* line 1423, style.scss */
+main article #message .right form p.valid-form input[type='text'] {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+main article #message .right form p.valid-form input[type=number]::-webkit-inner-spin-button,
+main article #message .right form p.valid-form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main article #message .right form p.valid-form textarea {
+  width: 100%;
+  padding: 10px 25px;
+  background: #fff;
+  border-style: solid;
+  border: 1px solid #6e6e6e;
+  color: #333333;
+  transition: 0.4s;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+main article #message .right form p.valid-form textarea::placeholder {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+}
+
+main article #message .right form button#send {
+  width: 100%;
+  padding: 16px 45px;
+  color: #333333;
+  background: #feb518;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+  border-radius: 0;
+  border: 1px solid #feb518;
+  margin-top: 30px;
+}
+
+main article #message .right form button#send:hover {
+  background: #fff;
+  color: #feb518;
+}
+
+main article #block_10 .block_1-inner {
+  background-image: url(../images/4.jpg);
+}
+
+main article #branch ._1-branch .location-image-box {
+  margin-bottom: 40px;
+}
+
+main article #branch ._1-branch .location-image-box img {
+  width: 100%;
+}
+
+main article #branch ._1-branch ul.location {
+  list-style: none;
+}
+
+main article #branch ._1-branch ul.location li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+
+main article #branch ._1-branch ul.location li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+footer {
+  background: rgba(0, 0, 0, 0.96);
+}
+
+footer .main-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #dddddd;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+footer ._1 p._1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #dddddd;
+  margin: 20px 0;
+}
+
+footer ._1 ul.contact-info {
+  position: relative;
+  list-style: none;
+  color: #dddddd;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer ._1 ul.contact-info li {
+  position: relative;
+  padding: 0 0 0 30px;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+footer ._1 ul.contact-info li span {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  line-height: 24px;
+}
+
+footer ._2 ul {
+  list-style: none;
+}
+
+footer ._2 ul li {
+  margin-bottom: 10px;
+}
+
+footer ._2 ul li a {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #dddddd;
+  transition: 0.4s;
+}
+
+footer ._2 ul li a:hover {
+  color: #feb518;
+}
+
+footer ._3 ._1-post {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 75px;
+  cursor: pointer;
+}
+
+footer ._3 ._1-post .image-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 62px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #dddddd;
+}
+
+footer ._3 ._1-post .content {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #dddddd;
+}
+
+footer ._3 ._1-post .content a.title-blog {
+  padding-top: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #dddddd;
+  text-decoration: none;
+  transition: 0.4s;
+  display: block;
+}
+
+footer ._3 ._1-post .content .time {
+  color: #777777;
+}
+
+footer ._3 ._1-post:hover a.title-blog {
+  color: #feb518;
+}
+
+footer ._4 ul {
+  color: #dddddd;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+}
+
+footer ._4 ul li {
+  margin-bottom: 20px;
+}
+
+footer ._4 ul li span.hours {
+  float: right;
+}
+
+.copyright {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #dddddd;
+  background: black;
+  padding: 40px 0;
+}
+
+.carousel-fade .carousel-item {
+  transition-duration: 2s;
+}
+
+-webkit-keyframes fadeIn from {
+  opacity: 0;
+}
+-webkit-keyframes fadeIn to {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 576px) {
+
+  header #header-top {
+    height: auto;
+  }
+
+  header #header-top .social {
+    text-align: center;
+    width: 100%;
+    padding-left: 110px;
+  }
+
+  header #header-top .phone {
+    text-align: center;
+  }
+
+  header #header-top .opening-hours {
+    display: none;
+  }
+
+  header #Nav button.open-button {
+    display: block;
+  }
+
+
+  main article .title {
+    margin-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  main article .title h5 {
+    font-size: 30px !important;
+  }
+
+  main article .title h4 {
+    font-size: 28px !important;
+  }
+
+  main article #slider ._1slide {
+    height: 30vh !important;
+    margin-top: 12vh;
+  }
+
+  main article #slider ._1slide .slide-caption {
+    display: none;
+  }
+
+  main article #slider a.left, main article #slider a.right {
+    top: 65% !important;
+  }
+
+  main article #introduce {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+  
+  main article #block_1 .block_1-inner, main article #block_2 .block_1-inner, main article #block_7 .block_1-inner, main article #block_3 .block_1-inner, main article #block_4 .block_1-inner, main article #block_5 .block_1-inner, main article #block_6 .block_1-inner, main article #block_8 .block_1-inner, main article #block_9 .block_1-inner, main article #block_10 .block_1-inner {
+    padding: 100px 0 !important;
+  }
+  
+  main article #block_1 .block_1-inner .title, main article #block_2 .block_1-inner .title, main article #block_7 .block_1-inner .title, main article #block_3 .block_1-inner .title, main article #block_4 .block_1-inner .title, main article #block_5 .block_1-inner .title, main article #block_6 .block_1-inner .title, main article #block_8 .block_1-inner .title, main article #block_9 .block_1-inner .title, main article #block_10 .block_1-inner .title {
+    margin-bottom: 0 !important;
+  }
+  
+  main article #special {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+  
+  main article #menu-tab {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+    padding-bottom: 0 !important;
+  }
+  
+  main article #menu-tab ul.list-tab {
+    margin-top: -130px !important;
+  }
+  
+  main article #menu-tab ul li ._1tab {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+  
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li {
+    font-size: 14px !important;
+  }
+  
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.name {
+    width: 75%;
+  }
+ 
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.dotted {
+    display: none;
+  }
+  
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner ul.info li span.desc {
+    font-size: 12px !important;
+  }
+
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .img-thumbnail-dish {
+    display: block;
+    position: none;
+    float: none;
+  }
+
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .img-thumbnail-dish img {
+    width: 160%;
+    position: static;
+  }
+
+  main article #menu-tab ul li ._1tab ._1dish ._1dish-inner .detail-info .info-block {
+    width: 100%;
+    float: left;
+    margin-left: auto;
+  }
+
+  main article #feedback {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #feedback ._1-fb-slide {
+    font-size: 14px !important;
+  }
+
+  main article #chefs {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #chefs ._1-chef-inner .image-box {
+    margin: 0 40px;
+  }
+
+  main article #reservation {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #reservation button#send {
+    width: 100%;
+  }
+
+  main article #meeting {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #meeting .content {
+    padding-left: 15px !important;
+    margin-bottom: 30px;
+  }
+
+  main article #meeting .content .title {
+    padding-left: 0;
+  }
+  
+  main article #meeting .picture-1 {
+    padding-right: 3px !important;
+  }
+ 
+  main article #meeting .picture-2 {
+    padding-left: 3px !important;
+  }
+
+  main article #block_3 {
+    margin-top: 80px;
+  }
+
+  main article #meeting2 {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #meeting2 .content {
+    padding-left: 15px !important;
+    margin-bottom: 30px;
+  }
+
+  main article #meeting2 .content .title {
+    padding-left: 0 !important;
+  }
+
+  main article #services {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #services .title {
+    margin-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  main article #services .title h5 {
+    font-size: 30px !important;
+  }
+
+  main article #services .title h4 {
+    font-size: 28px !important;
+  }
+
+  main article #services ._1-services {
+    margin-bottom: 20px;
+  }
+
+  main article #master-chef .master-chef-infor {
+    margin-top: 7%;
+  }
+
+  main article #contact-us {
+    padding: 50px 0;
+  }
+
+  main article #contact-us .contact-us-inner a.read-more {
+    margin-top: 40px;
+    float: left;
+    text-align: center;
+  }
+
+  main article #block_4 {
+    margin-top: 80px;
+  }
+
+  main article #booking-table {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #booking-table .booking p {
+    font-size: 14px;
+  }
+
+  main article #booking-table button#send {
+    width: 100%;
+  }
+
+  main article #block_6 {
+    margin-top: 80px;
+  }
+
+  main article #block_8 {
+    margin-top: 80px;
+  }
+
+  main article #gallery {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+ 
+  main article #block_9 {
+    margin-top: 80px;
+  }
+
+  main article #main-blog {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+  
+  main article #main-blog iframe {
+    height: 250px !important;
+  }
+
+  main article #aside {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+    padding-top: 0 !important;
+  }
+
+  main article #branch {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  main article #branch ._1-branch {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+
+  footer .main-title {
+    margin-bottom: 30px !important;
+  }
+
+  footer ._1 {
+    margin-bottom: 10px;
+  }
+
+  footer ._2 {
+    margin-bottom: 10px;
+  }
+
+  footer ._3 {
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    padding: 20px 0;
+  }
+}
